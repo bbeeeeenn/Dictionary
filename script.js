@@ -23,7 +23,6 @@ function search() {
 		.then((data) => {
 			console.log(data);
 			resultDisplay.innerHTML = `
-         <hr />
             <div>
 					<div>
 						<h2 class="featured-word" data-word>${input}</h2>
