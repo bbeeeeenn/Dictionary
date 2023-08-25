@@ -15,10 +15,14 @@
 body {
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
+   justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: #008883;
+   background-image: url('images/library.jpg');
+   background-position: center;
+   background-size: cover;
+   background-blend-mode: screen;
+   background-color: rgba(0, 136, 131, 0.3);
 }
 
 .container {
@@ -123,4 +127,8 @@ hr {
 .error {
    margin-top: 1rem;
    text-align: center;
+}
+
+.credits {
+   font-weight: bolder;
 }

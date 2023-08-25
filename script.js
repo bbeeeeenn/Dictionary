@@ -1,6 +1,13 @@
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const resultDisplay = document.getElementById("result-section");
 const sound = document.getElementById("sound");
+const searchBox = document.getElementById("input-word");
+
+searchBox.addEventListener("keydown", (e) => {
+	if (e.key === "Enter") {
+		search();
+	}
+});
 
 alert(
 	"NOTE: This project of mine is still in an experimental state. The definitions you may see could be incorrect or uninformative."
