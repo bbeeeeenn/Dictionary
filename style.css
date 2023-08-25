@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Poppins:ital,wght@0,500;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+*:not(i) {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   height: 100vh;
+   background-color: #008883;
+}
+
+.container {
+   background-color: #8edbdb;
+   width: clamp(300px, 85vw, 500px);
+   padding: 1rem;
+   margin-top: 3rem;
+   border-radius: 10px;
+}
+
+.container section:first-child {
+   margin-bottom: 1rem;
+}
+
+.container h1 {
+   font-weight: bolder;
+   font-size: 2.5rem;
+}
+
+.search-box {
+   display: flex;
+   align-items: center;
+}
+
+.word-searchbar {
+   outline: none;
+   border: 2px inset #b8e2e2;
+   background-color: #b8e2e2;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 0 0.5rem;
+   margin-right: 10px;
+   height: 2rem;
+   width: clamp(150px, 70%, 300px);
+}
+
+.search-btn {
+   height: 2rem;
+   width: 3rem;
+   font-weight: 900;
+   border: 2px outset #95dddd;
+   background-color: #6fc7c7;
+}
+
+.search-btn:hover {
+   cursor: pointer;
+}
+
+hr {
+   border: 1px solid gainsboro;
+}
+
+.container section:last-child {
+   position: relative;
+}
+
+.speaker {
+   position: absolute;
+   top: 0.6rem;
+   right: 1rem;
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4px;
+   height: 3rem;
+   aspect-ratio: 1/1;
+   border-radius: 2rem;
+
+   outline: 3px solid;
+
+   transition: 0.1s;
+}
+
+.speaker:hover {
+   cursor: pointer;
+   transform: scale(1.05);
+}
+
+.featured-word {
+   margin: 0.6rem 0 0 0;
+   font-size: 2.5rem;
+}
+
+.phonetic {
+   font-size: 1.2rem;
+   font-family: "Outfit";
+}
+
+.result {
+   margin-top: 1rem;
+   font-family: 'Outfit';
+   font-weight: 500;
+}
+
+.example {
+   border-left: 5px solid rgb(39, 161, 151);
+   padding-left: 1rem;
+   margin-top: 0.7rem;
+}
+
+.error {
+   margin-top: 1rem;
+   text-align: center;
+}
