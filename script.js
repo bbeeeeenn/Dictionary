@@ -25,7 +25,7 @@ function search() {
 			resultDisplay.innerHTML = `
             <div>
 					<div>
-						<h2 class="featured-word" data-word>${input}</h2>
+						<h2 class="featured-word" data-word>${input.toLowerCase()}</h2>
                   <span class="phonetic">${
 							data[0].meanings[0].partOfSpeech || ""
 						}</span>
