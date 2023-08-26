@@ -9,10 +9,6 @@ searchBox.addEventListener("keydown", (e) => {
 	}
 });
 
-alert(
-	"NOTE: This project of mine is still in an experimental state. The definitions you may see could be incorrect or uninformative."
-);
-
 function search() {
 	let input = document.getElementById("input-word").value;
 	if (input == "") {
