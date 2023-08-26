@@ -41,6 +41,8 @@ function search() {
 			const speakerBtn = document.getElementById("speakerBtn");
 			if (sound.getAttribute("src") == "") {
 				speakerBtn.style.display = "none";
+			} else {
+				setTimeout(playSound, 500);
 			}
 			console.log(sound);
 		})
